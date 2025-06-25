@@ -1,0 +1,60 @@
+// ignore_for_file: prefer_single_quotes
+class Assets {
+  Assets._();
+
+  /// Assets for cart
+  /// assets/cart.png
+  static const String cart = "assets/cart.png";
+
+  /// Assets for drinksBanana
+  /// assets/drinks/Banana.png
+  static const String drinksBanana = "assets/drinks/Banana.png";
+
+  /// Assets for drinksBrownie Island
+  /// assets/drinks/Brownie Island.png
+  static const String drinksBrownie = "assets/drinks/Brownie Island.png";
+
+  /// Assets for drinksBurger
+  /// assets/drinks/burger.png
+  static const String drinksBurger = "assets/drinks/burger.png";
+
+  /// Assets for drinksCarmel
+  /// assets/drinks/carmel.png
+  static const String drinksCarmel = "assets/drinks/carmel.png";
+
+  /// Assets for drinksChicken
+  /// assets/drinks/chicken.png
+  static const String drinksChicken = "assets/drinks/chicken.png";
+
+  /// Assets for drinksChocolate
+  /// assets/drinks/Chocolate.png
+  static const String drinksChocolate = "assets/drinks/Chocolate.png";
+
+  /// Assets for drinksEllipse 2
+  /// assets/drinks/Ellipse 2.png
+  static const String drinksEllipse = "assets/drinks/Ellipse 2.png";
+
+  /// Assets for drinksPeanut Butter
+  /// assets/drinks/Peanut Butter.png
+  static const String drinksPeanut = "assets/drinks/Peanut Butter.png";
+
+  /// Assets for drinksSalted Caramel
+  /// assets/drinks/Salted Caramel.png
+  static const String drinksSalted = "assets/drinks/Salted Caramel.png";
+
+  /// Assets for drinksShadow
+  /// assets/drinks/shadow.png
+  static const String drinksShadow = "assets/drinks/shadow.png";
+
+  /// Assets for drinksStrawberry
+  /// assets/drinks/Strawberry.png
+  static const String drinksStrawberry = "assets/drinks/Strawberry.png";
+
+  /// Assets for logoLogo
+  /// assets/logo/logo.png
+  static const String logoLogo = "assets/logo/logo.png";
+
+  /// Assets for vector
+  /// assets/Vector.svg
+  static const String vector = "assets/Vector.svg";
+}
