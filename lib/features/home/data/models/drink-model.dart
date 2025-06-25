@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:coffeapp/core/utils/app_images.dart';
 
 class DrinkModel {

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:coffeapp/features/details/presentation/views/widgets/count_item.dart';
 import 'package:coffeapp/features/details/presentation/views/widgets/hot_cold_widget.dart';
 import 'package:coffeapp/features/home/data/models/drink-model.dart';

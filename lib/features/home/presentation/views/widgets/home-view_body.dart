@@ -1,4 +1,6 @@
-import 'package:coffeapp/features/home/presentation/views/widgets/card_item.dart';
+// ignore: file_names
+// ignore_for_file: file_names, duplicate_ignore
+
 import 'package:coffeapp/features/home/presentation/views/widgets/card_item_list_builder.dart';
 import 'package:flutter/material.dart';
 

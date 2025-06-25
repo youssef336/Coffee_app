@@ -1,4 +1,3 @@
-import 'package:coffeapp/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
 class CardItem extends StatelessWidget {
