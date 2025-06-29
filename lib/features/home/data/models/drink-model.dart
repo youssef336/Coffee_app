@@ -31,7 +31,7 @@ class DrinkModel {
       name: 'Brownie Milkshake',
       description:
           'Rich chocolate shake blended with chunks of fudgy brownie for a decadent dessert drink.',
-      image: Assets.drinksBrownie,
+      image: Assets.drinksBrownieIsland,
       price: '\$5.49',
     ),
     DrinkModel(
@@ -47,7 +47,7 @@ class DrinkModel {
       name: 'Peanut Milkshake',
       description:
           'A nutty, protein-packed shake with a smooth peanut butter twist.',
-      image: Assets.drinksPeanut_Butter,
+      image: Assets.drinksPeanutButter,
       price: '\$4.79',
     ),
     DrinkModel(
@@ -55,7 +55,7 @@ class DrinkModel {
       name: 'Salted Milkshake',
       description:
           'A unique blend of sweet and salty flavors with a caramel drizzle finish.',
-      image: Assets.drinksSalted_Caramel,
+      image: Assets.drinksSaltedCaramel,
       price: '\$4.99',
     ),
     DrinkModel(
@@ -81,7 +81,7 @@ class DrinkModel {
       name: 'Brownie Blast Milkshake',
       description:
           'An explosion of brownie chunks in every sip of this chocolatey shake.',
-      image: Assets.drinksBrownie,
+      image: Assets.drinksBrownieIsland,
       price: '\$5.79',
     ),
     DrinkModel(
@@ -96,7 +96,7 @@ class DrinkModel {
       name: 'Peanut Punch Milkshake',
       description:
           'Peanut butter, milk, and a hint of cinnamon blended to perfection.',
-      image: Assets.drinksPeanut_Butter,
+      image: Assets.drinksPeanutButter,
       price: '\$4.89',
     ),
     DrinkModel(
@@ -104,7 +104,7 @@ class DrinkModel {
       name: 'Salted Caramel Milkshake',
       description:
           'Indulgent caramel with a touch of sea salt. Sweet and salty harmony.',
-      image: Assets.drinksSalted_Caramel,
+      image: Assets.drinksSaltedCaramel,
       price: '\$5.19',
     ),
     DrinkModel(

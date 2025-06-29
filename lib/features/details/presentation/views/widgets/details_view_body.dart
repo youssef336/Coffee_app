@@ -1,5 +1,6 @@
 import 'package:coffeapp/core/utils/app_images.dart';
 import 'package:coffeapp/features/details/presentation/views/widgets/count_item.dart';
+import 'package:coffeapp/features/details/presentation/views/widgets/cup_size.dart';
 import 'package:coffeapp/features/details/presentation/views/widgets/hot_cold_widget.dart';
 import 'package:coffeapp/features/home/data/models/drink-model.dart';
 import 'package:flutter/material.dart';
@@ -91,9 +92,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                   widget.drink.number == 3 ||
                   widget.drink.number == 7 ||
                   widget.drink.number == 1) {
-                positionbottom = MediaQuery.of(context).size.height * 0.098;
+                positionbottom = MediaQuery.of(context).size.height * 0.085;
               } else {
-                positionbottom = MediaQuery.of(context).size.height * 0.079;
+                positionbottom = MediaQuery.of(context).size.height * 0.066;
               }
 
               final scale = drinkSize - (_currentPage - index).abs() * 1;
@@ -110,33 +111,22 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                               ? Image.asset(
                                   drinks[widget.drink.number].image,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.67,
+                                      MediaQuery.of(context).size.height * 0.64,
                                 )
                               : Image.asset(
                                   drinks[index].image,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.67,
+                                      MediaQuery.of(context).size.height * 0.64,
                                 ),
 
                           Positioned(
                             bottom: positionbottom,
                             right: 0,
                             left: 0,
-                            child: Image.asset("assets/drinks/Ellipse 2.png"),
+                            child: Image.asset(Assets.drinksEllipse),
                           ),
                         ],
                       ),
-                      Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 10,
-                            foregroundColor: Colors.yellow,
-                            backgroundColor: Colors.black,
-                            child: Image.asset(Assets.drinksCupSize),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 20),
                     ],
                   ),
                 ),
@@ -144,6 +134,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             },
           ),
         ),
+
+        const CupSize(),
+
         SizedBox(height: MediaQuery.of(context).size.height * 0.03),
         const Row(children: [HotColdWidget(), Spacer(), CountItem()]),
 
