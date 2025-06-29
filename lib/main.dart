@@ -1,5 +1,5 @@
 import 'package:coffeapp/core/helper_functions/on_generate_routes.dart';
-import 'package:coffeapp/features/home/presentation/views/home_view.dart';
+import 'package:coffeapp/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class CoffeeApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       onGenerateRoute: onGenerateRoute,
-      initialRoute: HomeView.routeName,
+      initialRoute: SplashView.routeName,
       debugShowCheckedModeBanner: false,
     );
   }

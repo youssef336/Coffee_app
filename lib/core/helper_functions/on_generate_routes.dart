@@ -1,12 +1,15 @@
 import 'package:coffeapp/features/details/presentation/views/details_view.dart';
 import 'package:coffeapp/features/home/data/models/drink-model.dart';
 import 'package:coffeapp/features/home/presentation/views/home_view.dart';
+import 'package:coffeapp/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeView.routeName:
       return MaterialPageRoute(builder: (_) => const HomeView());
+    case SplashView.routeName:
+      return MaterialPageRoute(builder: (_) => const SplashView());
     case DetailsView.routeName:
       final drink = settings.arguments as DrinkModel;
       return MaterialPageRoute(builder: (_) => DetailsView(drink: drink));
