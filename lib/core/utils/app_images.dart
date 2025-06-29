@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for cart
   /// assets/cart.png
   static const String cart = "assets/cart.png";
@@ -10,9 +10,9 @@ class Assets {
   /// assets/drinks/Banana.png
   static const String drinksBanana = "assets/drinks/Banana.png";
 
-  /// Assets for drinksBrownieIsland
-  /// assets/drinks/Brownie_Island.png
-  static const String drinksBrownieIsland = "assets/drinks/Brownie_Island.png";
+  /// Assets for drinksBrownie Island
+  /// assets/drinks/Brownie Island.png
+  static const String drinksBrownie = "assets/drinks/Brownie_Island.png";
 
   /// Assets for drinksBurger
   /// assets/drinks/burger.png
@@ -34,17 +34,17 @@ class Assets {
   /// assets/drinks/cup_size.png
   static const String drinksCupSize = "assets/drinks/cup_size.png";
 
-  /// Assets for drinksEllipse2
-  /// assets/drinks/Ellipse_2.png
-  static const String drinksEllipse2 = "assets/drinks/Ellipse_2.png";
+  /// Assets for drinksEllipse 2
+  /// assets/drinks/Ellipse 2.png
+  static const String drinksEllipse = "assets/drinks/Ellipse.png";
 
-  /// Assets for drinksPeanutButter
-  /// assets/drinks/Peanut_Butter.png
-  static const String drinksPeanutButter = "assets/drinks/Peanut_Butter.png";
+  /// Assets for drinksPeanut Butter
+  /// assets/drinks/Peanut Butter.png
+  static const String drinksPeanut_Butter = "assets/drinks/Peanut_Butter.png";
 
-  /// Assets for drinksSaltedCaramel
-  /// assets/drinks/Salted_Caramel.png
-  static const String drinksSaltedCaramel = "assets/drinks/Salted_Caramel.png";
+  /// Assets for drinksSalted Caramel
+  /// assets/drinks/Salted Caramel.png
+  static const String drinksSalted_Caramel = "assets/drinks/Salted_Caramel.png";
 
   /// Assets for drinksShadow
   /// assets/drinks/shadow.png
@@ -62,4 +62,3 @@ class Assets {
   /// assets/Vector.svg
   static const String vector = "assets/Vector.svg";
 }
-

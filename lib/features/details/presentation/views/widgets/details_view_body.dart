@@ -1,3 +1,4 @@
+import 'package:coffeapp/core/utils/app_images.dart';
 import 'package:coffeapp/features/details/presentation/views/widgets/count_item.dart';
 import 'package:coffeapp/features/details/presentation/views/widgets/hot_cold_widget.dart';
 import 'package:coffeapp/features/home/data/models/drink-model.dart';
@@ -125,13 +126,13 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                           ),
                         ],
                       ),
-                      const Column(
+                      Column(
                         children: [
                           CircleAvatar(
                             radius: 10,
                             foregroundColor: Colors.yellow,
-                            backgroundColor: Colors.white,
-                            child: Assets,
+                            backgroundColor: Colors.black,
+                            child: Image.asset(Assets.drinksCupSize),
                           ),
                         ],
                       ),

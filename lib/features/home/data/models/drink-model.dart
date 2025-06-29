@@ -47,7 +47,7 @@ class DrinkModel {
       name: 'Peanut Milkshake',
       description:
           'A nutty, protein-packed shake with a smooth peanut butter twist.',
-      image: Assets.drinksPeanut,
+      image: Assets.drinksPeanut_Butter,
       price: '\$4.79',
     ),
     DrinkModel(
@@ -55,7 +55,7 @@ class DrinkModel {
       name: 'Salted Milkshake',
       description:
           'A unique blend of sweet and salty flavors with a caramel drizzle finish.',
-      image: Assets.drinksSalted,
+      image: Assets.drinksSalted_Caramel,
       price: '\$4.99',
     ),
     DrinkModel(
@@ -96,7 +96,7 @@ class DrinkModel {
       name: 'Peanut Punch Milkshake',
       description:
           'Peanut butter, milk, and a hint of cinnamon blended to perfection.',
-      image: Assets.drinksPeanut,
+      image: Assets.drinksPeanut_Butter,
       price: '\$4.89',
     ),
     DrinkModel(
@@ -104,7 +104,7 @@ class DrinkModel {
       name: 'Salted Caramel Milkshake',
       description:
           'Indulgent caramel with a touch of sea salt. Sweet and salty harmony.',
-      image: Assets.drinksSalted,
+      image: Assets.drinksSalted_Caramel,
       price: '\$5.19',
     ),
     DrinkModel(
