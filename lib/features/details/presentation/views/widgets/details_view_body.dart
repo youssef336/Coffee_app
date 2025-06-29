@@ -17,7 +17,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
 
   bool firstImage = true;
   double drinkSize = 1.1;
-  int positionbottom = 0;
+  double positionbottom = 0;
   String title = "";
   String price = "";
 
@@ -65,7 +65,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             children: [
               Text(
                 price.isEmpty ? widget.drink.price : price,
-                style: const TextStyle(color: Colors.black, fontSize: 20),
+                style: TextStyle(color: Colors.green[800], fontSize: 20),
               ),
             ],
           ),
@@ -90,9 +90,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                   widget.drink.number == 3 ||
                   widget.drink.number == 7 ||
                   widget.drink.number == 1) {
-                positionbottom = 120;
+                positionbottom = MediaQuery.of(context).size.height * 0.098;
               } else {
-                positionbottom = 100;
+                positionbottom = MediaQuery.of(context).size.height * 0.079;
               }
 
               final scale = drinkSize - (_currentPage - index).abs() * 1;
@@ -118,10 +118,20 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                                 ),
 
                           Positioned(
-                            bottom: positionbottom.toDouble(),
+                            bottom: positionbottom,
                             right: 0,
                             left: 0,
                             child: Image.asset("assets/drinks/Ellipse 2.png"),
+                          ),
+                        ],
+                      ),
+                      const Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 10,
+                            foregroundColor: Colors.yellow,
+                            backgroundColor: Colors.white,
+                            child: Assets,
                           ),
                         ],
                       ),

@@ -13,6 +13,12 @@ class CardItemListBuilder extends StatefulWidget {
 class _CardItemListBuilderState extends State<CardItemListBuilder> {
   final ScrollController _scrollController = ScrollController();
   @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
