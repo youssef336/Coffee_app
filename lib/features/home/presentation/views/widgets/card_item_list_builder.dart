@@ -34,7 +34,7 @@ class _CardItemListBuilderState extends State<CardItemListBuilder> {
               }
               offset = offset.clamp(0, 1);
               return Transform.scale(
-                scale: 1 - (offset * 0.16),
+                scale: 1 - (offset * 0.1),
                 child: GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(

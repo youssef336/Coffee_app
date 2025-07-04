@@ -6,6 +6,6 @@ class HomeView extends StatelessWidget {
   static const routeName = '/home';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(backgroundColor: Colors.white, body: HomeViewBody());
+    return const Scaffold(backgroundColor: Colors.brown, body: HomeViewBody());
   }
 }
