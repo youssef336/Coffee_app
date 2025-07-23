@@ -20,6 +20,10 @@ class CoffeeApp extends StatelessWidget {
       onGenerateRoute: onGenerateRoute,
       initialRoute: SplashView.routeName,
       debugShowCheckedModeBanner: false,
+
+      checkerboardOffscreenLayers: false, // Removes the yellow animation line
+      checkerboardRasterCacheImages:
+          false, // Optional: Removes checkerboarding for images
     );
   }
 }

@@ -15,6 +15,45 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     return Stack(
       children: [
         Positioned(
+          top: MediaQuery.of(context).size.height * 0.3,
+          left: 0,
+          right: 0,
+          child: TweenAnimationBuilder<double>(
+            duration: const Duration(seconds: 1),
+            tween: Tween(begin: 0.0, end: 1.0),
+            builder: (context, value, child) {
+              return Opacity(
+                opacity: value,
+                child: Transform.translate(
+                  offset: Offset(0.0, 20 * (1 - value)),
+                  child: child,
+                ),
+              );
+            },
+            child: const Hero(
+              tag: 'logo_text',
+              child: Text(
+                'Coffee App',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 48,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 2.0,
+                  shadows: [
+                    Shadow(
+                      color: Colors.black54,
+                      blurRadius: 10,
+                      offset: Offset(2, 2),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+
+        Positioned(
           left: 0,
           right: 0,
           top:
