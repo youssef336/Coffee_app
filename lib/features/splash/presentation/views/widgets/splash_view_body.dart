@@ -1,84 +1,40 @@
-import 'package:coffeapp/core/utils/app_images.dart';
-import 'package:coffeapp/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
+import 'package:coffeapp/features/home/presentation/views/home_view.dart';
 
-class SplashViewBody extends StatefulWidget {
+class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
 
-  @override
-  State<SplashViewBody> createState() => _SplashViewBodyState();
-}
-
-class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        // Display Rive animation with clickable listener areas
         Positioned(
-          top: MediaQuery.of(context).size.height * 0.3,
+          top: MediaQuery.of(context).size.height * 0.15,
           left: 0,
           right: 0,
-          child: TweenAnimationBuilder<double>(
-            duration: const Duration(seconds: 1),
-            tween: Tween(begin: 0.0, end: 1.0),
-            builder: (context, value, child) {
-              return Opacity(
-                opacity: value,
-                child: Transform.translate(
-                  offset: Offset(0.0, 20 * (1 - value)),
-                  child: child,
-                ),
-              );
-            },
-            child: const Hero(
-              tag: 'logo_text',
-              child: Text(
-                'Coffee App',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 48,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 2.0,
-                  shadows: [
-                    Shadow(
-                      color: Colors.black54,
-                      blurRadius: 10,
-                      offset: Offset(2, 2),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-
-        Positioned(
-          left: 0,
-          right: 0,
-          top:
-              MediaQuery.of(context).size.height *
-              0.4, // Center the logo vertically
-          child: Hero(
-            tag: 'logo',
-            child: Image.asset(
-              Assets.logo2,
-              height: 200, // Match the height in home screen
+          child: const SizedBox(
+            height: 400,
+            child: RiveAnimation.asset(
+              'assets/untitled.riv',
               fit: BoxFit.contain,
+              stateMachines: ['State Machine 1'], // Ensure this matches
             ),
           ),
         ),
-        Positioned(
-          bottom: 200,
-          right: 0,
-          left: 0,
-          child: IconButton(
-            color: Colors.black87,
 
+        // Navigation button
+        Positioned(
+          bottom: 180,
+          left: 0,
+          right: 0,
+          child: IconButton(
+            icon: const Icon(Icons.arrow_forward_ios, size: 60),
+            color: Colors.black87,
             onPressed: () {
               Navigator.pushNamed(context, HomeView.routeName);
             },
-            icon: const Icon(Icons.arrow_forward_ios, size: 60),
           ),
         ),
       ],
