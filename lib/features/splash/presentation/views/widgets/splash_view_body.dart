@@ -10,16 +10,17 @@ class SplashViewBody extends StatelessWidget {
     return Stack(
       children: [
         // Display Rive animation with clickable listener areas
-        Positioned(
-          top: MediaQuery.of(context).size.height * 0.15,
+        const Positioned(
           left: 0,
           right: 0,
-          child: const SizedBox(
-            height: 400,
+          child: SizedBox(
+            height: 800,
             child: RiveAnimation.asset(
-              'assets/untitled.riv',
+              'assets/coffe_animation.riv',
+
               fit: BoxFit.contain,
-              stateMachines: ['State Machine 1'], // Ensure this matches
+              stateMachines: ['State Machine 1'],
+              isTouchScrollEnabled: false, // Ensure this matches
             ),
           ),
         ),
